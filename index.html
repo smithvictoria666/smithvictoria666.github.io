@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>安阳道路救援_24小时汽车拖车搭电补胎_悟空救援400-808-2010</title>
+<meta name="description" content="悟空道路救援覆盖安阳文峰区、北关区、殷都区、龙安区、林州市、安阳县、汤阴县、滑县、内黄县，24小时提供安阳汽车拖车、搭电、补胎、脱困、开锁及京港澳高速、南林高速、安罗高速安阳段救援，电话400-808-2010。">
+<link rel="canonical" href="https://smithvictoria666.github.io">
+
+<!-- LocalBusiness 结构化数据：areaServed 明确到安阳及下辖区县，url 统一用 https://smithvictoria666.github.io 占位 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "悟空道路救援（安阳）",
+  "description": "安阳本地24小时道路救援服务，覆盖文峰区、北关区、殷都区、龙安区、林州市、安阳县、汤阴县、滑县、内黄县，提供汽车拖车、搭电、补胎、脱困、开锁及安阳境内高速救援。",
+  "url": "https://smithvictoria666.github.io",
+  "telephone": "400-808-2010",
+  "priceRange": "按里程/项目计价，来电报价",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "安阳市",
+    "addressRegion": "河南省",
+    "addressCountry": "CN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "36.103",
+    "longitude": "114.393"
+  },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "安阳市" },
+    { "@type": "AdministrativeArea", "name": "文峰区" },
+    { "@type": "AdministrativeArea", "name": "北关区" },
+    { "@type": "AdministrativeArea", "name": "殷都区" },
+    { "@type": "AdministrativeArea", "name": "龙安区" },
+    { "@type": "AdministrativeArea", "name": "林州市" },
+    { "@type": "AdministrativeArea", "name": "安阳县" },
+    { "@type": "AdministrativeArea", "name": "汤阴县" },
+    { "@type": "AdministrativeArea", "name": "滑县" },
+    { "@type": "AdministrativeArea", "name": "内黄县" }
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  }
+}
+</script>
+
+<style>
+/* 类名按区块差异化命名，避免同一模板全站复用 */
+:root{
+  --ay-ink:#1a1f2b;
+  --ay-warm:#c2410c;
+  --ay-paper:#fbf7f0;
+  --ay-line:#e4d9c8;
+  --ay-steel:#334155;
+  --ay-mist:#f1f5f9;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  color:var(--ay-ink);
+  background:var(--ay-paper);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+
+/* 顶部本地信任条 */
+.wkr-topstrip{
+  background:var(--ay-ink);
+  color:#d6d3d1;
+  font-size:.78rem;
+  padding:.55rem 1rem;
+  text-align:center;
+  letter-spacing:.3px;
+}
+.wkr-topstrip strong{color:#fdba74;font-weight:600;}
+
+/* 首屏：不采用常见 banner 全屏轮播，改为“定位+紧急入口+本地路况”复合结构 */
+.tang-hero{
+  background:linear-gradient(135deg,#fff7ed 0%,#fef3c7 55%,#fde68a 100%);
+  padding:1.8rem 1rem 1.4rem;
+  position:relative;
+  overflow:hidden;
+}
+.tang-hero::after{
+  content:"";
+  position:absolute;
+  right:-40px;bottom:-60px;
+  width:220px;height:220px;
+  border:2px dashed rgba(194,65,12,.18);
+  border-radius:50%;
+  pointer-events:none;
+}
+.tang-hero-inner{
+  max-width:1080px;margin:0 auto;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:1.2rem;
+  align-items:center;
+}
+.tang-badge{
+  display:inline-block;
+  background:var(--ay-warm);
+  color:#fff;
+  font-size:.72rem;
+  padding:.22rem .65rem;
+  border-radius:2px 10px 2px 10px;
+  letter-spacing:1px;
+  margin-bottom:.7rem;
+}
+.tang-hero h1{
+  font-size:clamp(1.35rem,4vw,2.05rem);
+  line-height:1.35;
+  font-weight:800;
+  color:#431407;
+  margin-bottom:.55rem;
+}
+.tang-hero h1 em{
+  font-style:normal;
+  color:var(--ay-warm);
+  background:linear-gradient(transparent 60%,#fecaca 60%);
+}
+.tang-hero-sub{
+  font-size:.9rem;
+  color:#57534e;
+  margin-bottom:1rem;
+  max-width:36rem;
+}
+.tang-quickrow{
+  display:flex;flex-wrap:wrap;gap:.5rem;
+}
+.tang-quickrow span{
+  background:rgba(255,255,255,.75);
+  border:1px solid #fcd34d;
+  padding:.3rem .7rem;
+  font-size:.78rem;
+  border-radius:20px;
+  color:#78350f;
+}
+.tang-hero-figure{
+  background:#fff;
+  border-radius:16px 4px 16px 4px;
+  padding:.65rem;
+  box-shadow:0 12px 30px -18px rgba(120,53,15,.45);
+  border:1px solid #fde68a;
+}
+.tang-hero-figure img{
+  border-radius:12px 2px 12px 2px;
+  aspect-ratio:4/3;
+  object-fit:cover;
+}
+.tang-hero-figure figcaption{
+  font-size:.72rem;
+  color:#78716c;
+  padding:.4rem .3rem 0;
+  text-align:center;
+}
+
+/* 本地服务网格：按区县/场景拆分，避免大段笼统描述 */
+.ayx-locals{
+  max-width:1080px;
+  margin:1.6rem auto 0;
+  padding:0 1rem;
+}
+.ayx-locals h2{
+  font-size:1.12rem;
+  color:#292524;
+  border-left:5px solid var(--ay-warm);
+  padding-left:.65rem;
+  margin-bottom:.85rem;
+  letter-spacing:.5px;
+}
+.ayx-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:.7rem;
+}
+.ayx-card{
+  background:#fff;
+  border:1px solid var(--ay-line);
+  padding:.85rem .9rem;
+  border-radius:4px 14px 4px 14px;
+  transition:border-color .2s;
+}
+.ayx-card:hover{border-color:var(--ay-warm);}
+.ayx-card b{
+  display:block;
+  font-size:.88rem;
+  color:#9a3412;
+  margin-bottom:.2rem;
+}
+.ayx-card p{
+  font-size:.8rem;
+  color:#57534e;
+  line-height:1.55;
+}
+
+/* 高速专线：安阳本地高速名称直接进正文 */
+.wkr-express{
+  margin:1.8rem 0;
+  background:var(--ay-steel);
+  color:#e2e8f0;
+  padding:1.6rem 1rem;
+}
+.wkr-express-in{
+  max-width:1080px;margin:0 auto;
+}
+.wkr-express h2{
+  font-size:1.12rem;
+  color:#fed7aa;
+  margin-bottom:.5rem;
+}
+.wkr-express-lead{
+  font-size:.86rem;
+  color:#cbd5e1;
+  margin-bottom:1rem;
+}
+.wkr-express-rail{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:.6rem;
+}
+.wkr-express-rail div{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  padding:.7rem .75rem;
+  border-radius:3px;
+  font-size:.8rem;
+  line-height:1.5;
+}
+.wkr-express-rail b{
+  display:block;
+  color:#fff;
+  font-size:.84rem;
+  margin-bottom:.15rem;
+}
+
+/* 轮播图区域：JS 控制切换，文字说明与 alt 静态写在 HTML 中 */
+.ayx-slider-wrap{
+  max-width:1080px;
+  margin:1.8rem auto 0;
+  padding:0 1rem;
+}
+.ayx-slider-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  margin-bottom:.6rem;
+}
+.ayx-slider-head h2{
+  font-size:1.06rem;
+  color:#292524;
+}
+.ayx-slider-head span{
+  font-size:.75rem;
+  color:#a8a29e;
+}
+.ayx-slider{
+  position:relative;
+  border-radius:14px 3px 14px 3px;
+  overflow:hidden;
+  background:#e7e5e4;
+  border:1px solid #d6d3d1;
+}
+.ayx-track{
+  display:flex;
+  transition:transform .5s ease;
+  will-change:transform;
+}
+.ayx-slide{
+  min-width:100%;
+  position:relative;
+}
+.ayx-slide img{
+  width:100%;
+  aspect-ratio:16/7;
+  object-fit:cover;
+}
+.ayx-slide figcaption{
+  position:absolute;
+  left:0;right:0;bottom:0;
+  background:linear-gradient(transparent,rgba(0,0,0,.72));
+  color:#fafaf9;
+  font-size:.8rem;
+  padding:1.6rem .9rem .6rem;
+}
+.ayx-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:rgba(255,255,255,.82);
+  border:0;
+  width:32px;height:32px;
+  border-radius:50%;
+  font-size:1rem;
+  cursor:pointer;
+  color:#292524;
+  z-index:2;
+  display:flex;align-items:center;justify-content:center;
+}
+.ayx-prev{left:.5rem;}
+.ayx-next{right:.5rem;}
+
+/* 长文本本地说明：H2 注入区县，正文出现乡镇与地标 */
+.tang-deep{
+  max-width:1080px;
+  margin:1.8rem auto 0;
+  padding:0 1rem;
+}
+.tang-deep article{
+  background:#fff;
+  border:1px solid var(--ay-line);
+  padding:1.2rem 1rem;
+  border-radius:3px 18px 3px 18px;
+}
+.tang-deep h2{
+  font-size:1.04rem;
+  color:#9a3412;
+  margin-bottom:.55rem;
+}
+.tang-deep p{
+  font-size:.84rem;
+  color:#44403c;
+  margin-bottom:.65rem;
+  text-align:justify;
+}
+.tang-deep p:last-child{margin-bottom:0;}
+
+/* FAQ：本地长尾问答，静态写入 */
+.wkr-faq{
+  max-width:1080px;
+  margin:1.5rem auto 2rem;
+  padding:0 1rem;
+}
+.wkr-faq h2{
+  font-size:1.04rem;
+  color:#292524;
+  margin-bottom:.65rem;
+}
+.wkr-faq details{
+  background:#fff;
+  border:1px solid var(--ay-line);
+  border-radius:4px;
+  margin-bottom:.45rem;
+  padding:.7rem .85rem;
+}
+.wkr-faq summary{
+  font-size:.84rem;
+  font-weight:650;
+  color:#431407;
+  cursor:pointer;
+}
+.wkr-faq details p{
+  font-size:.8rem;
+  color:#57534e;
+  margin-top:.4rem;
+  line-height:1.6;
+}
+
+/* 底部信息，含安阳本地锚点 */
+.ayx-foot{
+  background:#292524;
+  color:#a8a29e;
+  font-size:.78rem;
+  text-align:center;
+  padding:1.3rem 1rem 5rem;
+  line-height:1.8;
+}
+.ayx-foot strong{color:#fdba74;}
+
+/* 悬浮电话按钮：移动端同样可见 */
+.wkr-call-float{
+  position:fixed;
+  right:1rem;
+  bottom:1rem;
+  z-index:999;
+  display:flex;
+  align-items:center;
+  gap:.45rem;
+  background:var(--ay-warm);
+  color:#fff;
+  padding:.65rem 1rem .65rem .75rem;
+  border-radius:40px;
+  box-shadow:0 8px 24px -8px rgba(194,65,12,.65);
+  font-size:.88rem;
+  font-weight:700;
+  letter-spacing:.3px;
+  animation:wkrPulse 2.4s infinite;
+}
+.wkr-call-float span{
+  display:inline-flex;
+  width:22px;height:22px;
+  border-radius:50%;
+  background:rgba(255,255,255,.22);
+  align-items:center;justify-content:center;
+  font-size:.85rem;
+}
+@keyframes wkrPulse{
+  0%,100%{box-shadow:0 8px 24px -8px rgba(194,65,12,.65);}
+  50%{box-shadow:0 8px 30px -4px rgba(194,65,12,.9);}
+}
+
+/* 响应式：小屏单列，首屏图序调整 */
+@media(max-width:720px){
+  .tang-hero-inner{grid-template-columns:1fr;}
+  .tang-hero-figure{order:-1;max-width:420px;margin:0 auto;}
+  .ayx-grid{grid-template-columns:1fr 1fr;}
+  .wkr-express-rail{grid-template-columns:1fr 1fr;}
+  .ayx-slide img{aspect-ratio:16/9;}
+  .ayx-slider-head{flex-direction:column;gap:.15rem;}
+}
+@media(max-width:420px){
+  .ayx-grid{grid-template-columns:1fr;}
+  .wkr-express-rail{grid-template-columns:1fr;}
+  .tang-quickrow span{font-size:.72rem;}
+  .wkr-call-float{right:.7rem;bottom:.7rem;padding:.55rem .85rem .55rem .65rem;font-size:.82rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- 顶部信任条：直接写明安阳本地覆盖与24小时 -->
+<div class="wkr-topstrip">
+  安阳本地调度 · 24小时在线 · 覆盖 <strong>文峰/北关/殷都/龙安/林州/安阳县/汤阴/滑县/内黄</strong> · 电话 400-808-2010
+</div>
+
+<!-- 首屏：定位安阳 + 紧急入口 + 服务场景静态呈现 -->
+<header class="tang-hero">
+  <div class="tang-hero-inner">
+    <div class="tang-hero-copy">
+      <span class="tang-badge">悟空道路救援 · 安阳</span>
+      <h1>安阳道路救援<br><em>汽车拖车/搭电/补胎/脱困</em> 24小时就近派车</h1>
+      <p class="tang-hero-sub">
+        车子在安阳文峰大道、中华路、人民大道，或京港澳高速安阳段、南林高速安阳东附近抛锚、亏电、爆胎，直接拨 400-808-2010。悟空道路救援在安阳市区及林州、汤阴、滑县、内黄、安阳县均有协作救援车辆，高速与市区分开调度。
+      </p>
+      <div class="tang-quickrow">
+        <span>安阳汽车搭电</span>
+        <span>安阳汽车拖车</span>
+        <span>安阳汽车补胎</span>
+        <span>安阳汽车脱困</span>
+        <span>安阳汽车开锁</span>
+        <span>安阳高速救援</span>
+      </div>
+    </div>
+    <figure class="tang-hero-figure">
+      <!-- 图片 src 请替换为 http://test.doudouwan.cn/link/1.txt 中对应安阳救援场景的图片地址 -->
+      <img src="/ay-local/rescue-hero-anyang.webp" alt="安阳道路救援车辆在文峰区市区道路旁准备拖车作业" loading="eager">
+      <figcaption>安阳市区道路救援出车示意</figcaption>
+    </figure>
+  </div>
+</header>
+
+<!-- 区县 + 场景卡片：每个区县绑定具体乡镇/街道，避免只换地名 -->
+<section class="ayx-locals">
+  <h2>安阳各区县救援落脚点（含乡镇/街道）</h2>
+  <div class="ayx-grid">
+    <div class="ayx-card">
+      <b>文峰区</b>
+      <p>覆盖东大街街道、北大街街道、西大街街道、甜水井街道、紫薇大道街道等，文峰大道、中华路沿线搭电拖车优先调度。</p>
+    </div>
+    <div class="ayx-card">
+      <b>北关区</b>
+      <p>红旗路街道、灯塔路街道、豆腐营街道、彰北街道等，人民大道、安漳大道附近汽车亏电、换胎可就近派车。</p>
+    </div>
+    <div class="ayx-card">
+      <b>殷都区</b>
+      <p>梅园庄街道、李珍街道、电厂路街道、纱厂路街道等，安钢大道、中州路沿线脱困与拖车需求响应。</p>
+    </div>
+    <div class="ayx-card">
+      <b>龙安区</b>
+      <p>田村街道、彰武街道、文昌大道街道、中州路街道等，文明大道、安彩大道周边补胎搭电覆盖。</p>
+    </div>
+    <div class="ayx-card">
+      <b>林州市</b>
+      <p>开元街道、振林街道、龙山街道、桂园街道，以及姚村镇、陵阳镇、临淇镇等，太行路、红旗渠大道沿线可调度。</p>
+    </div>
+    <div class="ayx-card">
+      <b>安阳县</b>
+      <p>白璧镇、铜冶镇、吕村镇、伦掌镇、曲沟镇、水冶镇等，安楚路、安姚路周边汽车搭电与拖车。</p>
+    </div>
+    <div class="ayx-card">
+      <b>汤阴县</b>
+      <p>城关镇、菜园镇、五陵镇、宜沟镇等，汤阴县城及京港澳高速汤阴站附近高速拖车、补胎换胎。</p>
+    </div>
+    <div class="ayx-card">
+      <b>滑县</b>
+      <p>道口镇街道、城关街道、锦和街道，以及留固镇、万古镇、高平镇等，大广高速滑县段与县乡道路救援。</p>
+    </div>
+    <div class="ayx-card">
+      <b>内黄县</b>
+      <p>城关镇、东庄镇、井店镇、楚旺镇等，安罗高速内黄段及国道G230沿线脱困、送油、搭电。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 高速专线：安阳境内真实高速名称 + 服务区/收费站，不做泛泛“高速救援” -->
+<section class="wkr-express">
+  <div class="wkr-express-in">
+    <h2>安阳境内高速救援专线</h2>
+    <p class="wkr-express-lead">高速路段调度与市区不同，说明具体高速名称和站点，能更快派车。</p>
+    <div class="wkr-express-rail">
+      <div><b>京港澳高速 G4 安阳段</b>安阳北收费站、安阳收费站、安阳南收费站，豫冀界服务区、安阳服务区附近拖车/搭电/补胎。</div>
+      <div><b>南林高速 安阳段</b>安阳东服务区、安阳东站附近，高速补胎换胎、送油、现场小修。</div>
+      <div><b>安罗高速 G0424 内黄段</b>内黄境内及北郭站—二安站区间，高速拖车与脱困。</div>
+      <div><b>大广高速 滑县段</b>滑县境内高速出入口及沿线，货车/小车拖车、搭电、补胎。</div>
+    </div>
+  </div>
+</section>
+
+<!-- 轮播图：JS 控制切换，但 alt/figcaption 全部静态在 HTML 中 -->
+<section class="ayx-slider-wrap" aria-label="安阳道路救援场景图">
+  <div class="ayx-slider-head">
+    <h2>安阳救援现场场景</h2>
+    <span>左右切换 · 图片说明均为静态文本</span>
+  </div>
+  <div class="ayx-slider">
+    <button class="ayx-arrow ayx-prev" type="button" aria-label="上一张安阳救援场景">‹</button>
+    <div class="ayx-track">
+      <figure class="ayx-slide">
+        <!-- src 替换为 txt 中的安阳市区拖车图 -->
+        <img src="/ay-local/tow-wenfeng-anyang.webp" alt="安阳文峰区文峰大道汽车拖车救援现场" loading="lazy">
+        <figcaption>安阳文峰区文峰大道 · 汽车拖车</figcaption>
+      </figure>
+      <figure class="ayx-slide">
+        <!-- src 替换为 txt 中的高速救援图 -->
+        <img src="/ay-local/highway-anyang-rescue.webp" alt="京港澳高速安阳段高速拖车救援车辆作业" loading="lazy">
+        <figcaption>京港澳高速安阳段 · 高速拖车</figcaption>
+      </figure>
+      <figure class="ayx-slide">
+        <!-- src 替换为 txt 中的搭电/补胎图 -->
+        <img src="/ay-local/battery-tangyin-anyang.webp" alt="安阳汤阴县车辆搭电启动救援服务" loading="lazy">
+        <figcaption>汤阴县 · 汽车搭电救援</figcaption>
+      </figure>
+      <figure class="ayx-slide">
+        <!-- src 替换为 txt 中的脱困/补胎图 -->
+        <img src="/ay-local/tire-linzhou-anyang.webp" alt="安阳林州市车辆补胎换胎道路救援" loading="lazy">
+        <figcaption>林州市 · 补胎换胎</figcaption>
+      </figure>
+    </div>
+    <button class="ayx-arrow ayx-next" type="button" aria-label="下一张安阳救援场景">›</button>
+  </div>
+</section>
+
+<!-- 长文本本地说明：融入真实道路、地标、乡镇，制造不可复用的地理语义 -->
+<section class="tang-deep">
+  <article>
+    <h2>安阳汽车救援，为什么要按“区县 + 高速”分开调度</h2>
+    <p>
+      安阳不是一个“市中心一个点就能覆盖全境”的城市。文峰区、北关区、殷都区、龙安区四个市辖区路网密集，但林州市位于西部山区，安阳县、汤阴县、滑县、内黄县又分别处在不同方向。悟空道路救援在安阳做的是分区落脚：市区以文峰大道、中华路、人民大道、彰德路为骨架，汤阴方向重点看京港澳高速汤阴站和城关镇周边，滑县方向兼顾大广高速滑县段与道口镇街道，内黄方向则覆盖安罗高速内黄段及城关镇、楚旺镇一带。
+    </p>
+    <p>
+      高速救援更不能含糊。京港澳高速G4安阳段有安阳北、安阳、安阳南三个收费站，豫冀界服务区和安阳服务区附近车流大、抛锚概率高；南林高速安阳段连着安阳东服务区和安阳东站；安罗高速G0424从内黄县豫冀省界穿入；大广高速经过滑县。报救援时直接说“京港澳安阳服务区附近”或“南林高速安阳东站附近”，调度就能把高速单和市区单分开，减少等待。
+    </p>
+    <p>
+      本地地标也是判断位置的好参照。殷墟、中国文字博物馆、安阳火车站、安阳东站（高铁）、安阳河（洹河）沿线、红旗渠大道（林州）、道口古镇（滑县）等，都是安阳司机常说的位置锚点。把区县、乡镇街道、高速站点和这些地标叠在一起，页面才有安阳本地的地理颗粒度，而不是一张“放之四海而皆准”的救援单页。
+    </p>
+  </article>
+</section>
+
+<!-- FAQ：安阳本地长尾问答，强化地域语义 -->
+<section class="wkr-faq">
+  <h2>安阳道路救援常见问题</h2>
+  <details>
+    <summary>安阳高速上车子抛锚，报位置时说什么最快？</summary>
+    <p>先报高速名称和方向，例如“京港澳高速G4安阳段北京方向”“南林高速安阳东站附近”“安罗高速内黄段”“大广高速滑县段”，再说最近的收费站、服务区或桩号。高速救援车辆不能像市区一样随意掉头，位置越准，派车越快。</p>
+  </details>
+  <details>
+    <summary>在汤阴县、滑县、内黄县的乡镇能派车吗？</summary>
+    <p>可以。汤阴县城关镇、宜沟镇，滑县道口镇街道、留固镇，内黄县城关镇、楚旺镇等乡镇都在安阳本地协作调度范围内，但乡镇距离较远，建议电话里先说清乡镇名称和附近道路，方便判断可到达时间。</p>
+  </details>
+  <details>
+    <summary>安阳汽车搭电、补胎、拖车分别适合什么情况？</summary>
+    <p>电瓶亏电打不着火，选搭电；轮胎扎钉漏气或爆胎，选流动补胎/换备胎；车辆无法行驶、事故后不能动、陷车脱困后仍不能正常开，选拖车。高速上补胎换胎和拖车要按高速作业规范来，不要自行在行车道停留。</p>
+  </details>
+  <details>
+    <summary>安阳汽车开锁一般多久能到？</summary>
+    <p>市区文峰区、北关区、殷都区、龙安区核心路段通常较快，具体取决于当时调度半径和林州、滑县、内黄等较远区县的实时车辆位置。拨 400-808-2010 后可直接确认当前最近的救援车方位。</p>
+  </details>
+</section>
+
+<!-- 底部本地信息，再次强化安阳地名但不堆砌 -->
+<footer class="ayx-foot">
+  <p><strong>悟空道路救援 · 安阳</strong> ｜ 电话 400-808-2010 ｜ 24小时道路救援、汽车拖车、搭电、补胎、脱困、开锁</p>
+  <p>覆盖：安阳市 · 文峰区 · 北关区 · 殷都区 · 龙安区 · 林州市 · 安阳县 · 汤阴县 · 滑县 · 内黄县</p>
+  <p>高速重点：京港澳高速G4安阳段（安阳北/安阳/安阳南收费站、豫冀界服务区、安阳服务区）｜南林高速安阳段（安阳东服务区）｜安罗高速G0424内黄段｜大广高速滑县段</p>
+</footer>
+
+<!-- 悬浮电话按钮：移动端固定可见 -->
+<a class="wkr-call-float" href="tel:4008082010" aria-label="拨打悟空道路救援安阳电话 400-808-2010">
+  <span>☎</span> 400-808-2010
+</a>
+
+<script>
+/* 仅控制轮播位移，不注入任何核心文本或 alt */
+(function(){
+  var track = document.querySelector('.ayx-track');
+  if(!track) return;
+  var slides = track.children;
+  var total = slides.length;
+  var idx = 0;
+  var prev = document.querySelector('.ayx-prev');
+  var next = document.querySelector('.ayx-next');
+
+  function go(n){
+    idx = (n + total) % total;
+    track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+  }
+  if(prev) prev.addEventListener('click', function(){ go(idx - 1); });
+  if(next) next.addEventListener('click', function(){ go(idx + 1); });
+
+  setInterval(function(){ go(idx + 1); }, 5200);
+})();
+</script>
+
+</body>
+</html>
